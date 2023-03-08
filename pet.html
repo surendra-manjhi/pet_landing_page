@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet.om</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            font-family: fantasy;
+        }
+
+        body {
+            background-color: whitesmoke;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            padding: 1rem 0rem;
+            width: 80%;
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            padding: 1rem;
+        }
+
+        .contact {
+            font-size: 1.1rem;
+        }
+
+        section {
+            margin: auto;
+            padding: 2rem 2rem;
+            width: 80%;
+        }
+
+        .hero-sec {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        .description {
+            position: relative;
+            padding: 4rem 2rem;
+            width: 16rem;
+        }
+
+        .description::after {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            top: 0rem;
+            left: 0rem;
+            width: 5rem;
+            height: 100%;
+            background-color: gold;
+            border-radius: 4rem;
+        }
+
+        .heading-sec {
+            padding-right: 2rem;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        button {
+            padding: 1rem 2rem;
+            background-color: black;
+            color: white;
+            border-radius: 100%;
+        }
+
+        button:nth-child(2) {
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+        }
+
+        .experts-sec {
+            width: 8rem;
+        }
+
+        img {
+            width: 2.6rem;
+            border-radius: 100%;
+        }
+
+        .img-sec {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 0rem;
+            width: 70%;
+            height: 50vh;
+        }
+
+        .image {
+            width: 20rem;
+            height: 20rem;
+            background-color: red;
+        }
+
+        .image1 {
+            background-image: url("dog1.jpg");
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+
+        .image2 {
+            background-image: url("dog2.jpg");
+            border-radius: 100%;
+        }
+
+        .image3 {
+            background-image: url("dog3.jpg");
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+        }
+
+        .background {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Pet.om</div>
+
+            <ul>
+                <li class="link">Home</li>
+                <li class="link">Blog</li>
+                <li class="link">Services</li>
+                <li class="link">Training</li>
+                <li class="link">About Us</li>
+            </ul>
+
+            <div class="contact">Contact Us</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-sec">
+            <p class="description">WEEKLY DOG WALKING PACKAGES: Daytime Monday-Friday</p>
+
+            <div class="heading-sec">
+                <h1 class="heading">Take Better Care Of Your Pets</h1>
+
+                <div class="btn">
+                    <button type="button">Our Services</button>
+                    <button type="button">Schedule A Call</button>
+                </div>
+            </div>
+
+            <div class="experts-sec">
+                <h3 class="title">Our experts</h3>
+
+                <div class="expert-img">
+                    <img src="girl.jpg" alt="_lomoa_">
+                    <img src="girl.jpg" alt="equon_">
+
+                    <p class="more">10+ More</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="img-sec">
+            <div class="image image1 background"></div>
+            <div class="image image2 background"></div>
+            <div class="image image3 background"></div>
+        </section>
+    </main>
+</body>
+
+</html>
